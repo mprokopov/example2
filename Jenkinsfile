@@ -1,4 +1,6 @@
 pipeline {
+  agent any
+
   stages {
     stage('Build') {
       steps {
@@ -10,4 +12,5 @@ pipeline {
         archiveArtifact 'example2.tar.gz'
       }
     }
+}
 }
