@@ -9,7 +9,7 @@ pipeline {
     }
     stage('Publish') {
       steps {
-        archiveArtifact 'example2.tar.gz'
+        archiveArtifacts 'example2.tar.gz'
       }
     }
 }
